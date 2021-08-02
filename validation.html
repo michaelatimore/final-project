@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="my-5">Task Form</h1>
+    <div class="row mb-5">
+      <div class="col">
+        <h2>New Task</h2>
+        <div id="error" class="blinking"></div>
+        <form id="newTaskForm">
+          <div class="form-group">
+            <label for="newTaskNameInput">Name</label>
+            <input type="text" class="form-control" id="newTaskNameInput">
+          </div>
+          <div class="form-group">
+            <label for="newTaskDescription">Description</label>
+            <textarea type="text" class="form-control" id="newTaskDescription"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="newTaskAssignedTo">Assigned To</label>
+              <input type="text" class="form-control" id="newTaskAssignedTo">
+            </div>
+            <div class="form-group col">
+              <label for="newTaskDueDate">Due Date</label>
+              <input type="date" class="form-control" id="newTaskDueDate">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+        </form>
+      </div>
+    </div>
+  </div>
