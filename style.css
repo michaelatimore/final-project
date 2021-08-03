@@ -1,23 +1,68 @@
 body {
   font-size: 30px;
   font-family: 'Roboto Slab', serif;
-  box-sizing: border-box;
-  border: 5px solid #4a0afa;
-  background-color: #b8c1e3;
+  background-image: url("/final-project/resources/taskclock.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50%;
 }
 
-h1 {
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+#taskListing {
+  width: 70%;
+  margin: auto;
+}
+
+ul {
+  padding: 10px;
+}
+
+h1, h2 {
+  font-weight: bolder;
   text-align: center;
 }
 
+input {
+  border: 3px solid #000e02;
+  border-radius: 10px;
+  background-color: #d3dfd5;
+}
+
+button {
+  font-weight: bolder;
+}
+
+input:invalid {
+  background-color: #df725f;
+}
+
+input:valid {
+  background-color: #37b43d;
+}
+
+textarea:invalid {
+  background-color: #df725f;
+}
+
+textarea:valid {
+  background-color: #37b43d;
+}
+
+
 #error {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1rem;
   font-weight: bold;
 }
 
 .blinking{
-    animation:blinkingText 1.2s infinite;
+  text-align: center;
+  animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
     0%{     color: #ff0000;    }
